@@ -1,8 +1,9 @@
 {
-  "name": "translation",
-  "displayName": "translation",
-  "description": "",
+  "name": "easy-translation",
+  "displayName": "Esay Translation",
+  "description": "Esay Translation",
   "version": "0.0.1",
+  "publisher": "luoyangwei",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -29,7 +30,7 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run package",
+    "vscode:vscode": "npm run package",
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
