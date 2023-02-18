@@ -4,7 +4,13 @@
 
 ## 快速翻译
 
-我映射了MacOS的`cmd+.`和windows的`ctrl+.`键盘快捷键.
+我映射了 MacOS 的`cmd+.`和 windows 的`ctrl+.`键盘快捷键.
+
+```HTML
+<video width:60% height:auto controls autoplay loop>
+<source src="https://github.com/luoyangwei/translation/blob/master/operation_video_translation.mov" type="video/mov">
+</video>
+```
 
 ## Release Notes
 
