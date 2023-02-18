@@ -2,7 +2,7 @@
   "name": "easy-translation",
   "displayName": "Esay Translation",
   "description": "Esay Translation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "luoyangwei",
   "engines": {
     "vscode": "^1.75.0"
