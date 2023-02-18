@@ -109,3 +109,5 @@ dist
 vsc-extension-quickstart.md
 
 *.vsix
+
+access_token.txt
