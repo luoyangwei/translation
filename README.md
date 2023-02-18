@@ -6,7 +6,7 @@
 
 我映射了 MacOS 的`cmd+.`和 windows 的`ctrl+.`键盘快捷键.
 
-![img](https://github.com/luoyangwei/translation/blob/master/demo.gif)
+![img](https://raw.githubusercontent.com/luoyangwei/translation/master/demo.gif)
 
 ## Release Notes
 
