@@ -11,7 +11,9 @@ export interface Invoker {
     replaceText(newText: string): any
 }
 
-// 平台信息
+/**
+ * 平台信息
+ */
 export class PlatformAccessInfo {
     platform?: string;
     auth?: boolean;
