@@ -1,7 +1,7 @@
 {
   "name": "easy-translation",
   "displayName": "Esay Translation",
-  "description": "Esay Translation",
+  "description": "使用快捷键直接翻译并且替换内容.",
   "version": "0.0.2",
   "publisher": "luoyangwei",
   "engines": {
@@ -16,6 +16,30 @@
   "icon": "icon.png",
   "main": "./dist/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Esay Translation",
+      "properties": {
+        "esayTranslation.channel": {
+          "type": "string",
+          "default": "youdao",
+          "description": "选择翻译的渠道",
+          "enum": [
+            "youdao",
+            "baidu"
+          ],
+          "scope": "resource"
+        },
+        "esayTranslation.channelAppid": {
+          "type": "string",
+          "description": "平台ID"
+        },
+        "esayTranslation.channelSecretKey": {
+          "type": "string",
+          "description": "平台秘钥"
+        }
+      }
+    },
     "commands": [
       {
         "command": "translation.selected",
@@ -60,6 +84,7 @@
   },
   "dependencies": {
     "encodeurl": "^1.0.2",
-    "got": "^12.5.3"
+    "got": "^12.5.3",
+    "md5": "^2.3.0"
   }
 }
