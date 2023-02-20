@@ -2,7 +2,7 @@
   "name": "easy-translation",
   "displayName": "Esay Translation",
   "description": "使用快捷键直接翻译并且替换内容.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "luoyangwei",
   "engines": {
     "vscode": "^1.75.0"
