@@ -1,6 +1,7 @@
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
-const workspaceConfiguration: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration("esayTranslation");
+const workspaceConfiguration: vscode.WorkspaceConfiguration =
+    vscode.workspace.getConfiguration("esayTranslation");
 
 const keys = {
     channel: "channel",
@@ -24,6 +25,6 @@ export function loadConfiguration(): Configuration {
     return {
         channel: workspaceConfiguration.get(keys.channel),
         appid: workspaceConfiguration.get(keys.appid),
-        secretKey: workspaceConfiguration.get(keys.secretKey)
+        secretKey: workspaceConfiguration.get(keys.secretKey),
     };
 }

@@ -42,7 +42,7 @@
     },
     "commands": [
       {
-        "command": "translation.selected",
+        "command": "esay.translation.selected",
         "title": "翻译选中内容"
       }
     ],
@@ -50,7 +50,7 @@
       {
         "key": "ctrl+.",
         "mac": "cmd+.",
-        "command": "translation.selected"
+        "command": "esay.translation.selected"
       }
     ]
   },

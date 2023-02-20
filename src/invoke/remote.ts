@@ -1,14 +1,17 @@
 import got from "got";
 import { Configuration, loadConfiguration } from "../configuration";
-import { BaiduTransilation, Translator, YoudaoTransilation } from "./translation";
+import {
+    BaiduTransilation,
+    Translator,
+    YoudaoTransilation,
+} from "./translation";
 
 export interface Invoker {
-
     // 获取平台info信息
-    getPlatformAccessInfo(): PlatformAccessInfo
+    getPlatformAccessInfo(): PlatformAccessInfo;
 
     // 替换文本
-    replaceText(newText: string): any
+    replaceText(newText: string): any;
 }
 
 /**
@@ -37,11 +40,14 @@ export function translation(text: string, invoke: Invoker) {
     let iterator: TranslatorIterator = new TranslatorIterator();
     let translator = iterator.next(platformAccessInfo.platform);
     let newText = translator.translate(text, configuration);
-    newText.then(text => invoke.replaceText(text));
+    newText.then((text) => invoke.replaceText(text));
 }
 
 class TranslatorIterator {
-    translators: Translator[] = [new BaiduTransilation(), new YoudaoTransilation()];
+    translators: Translator[] = [
+        new BaiduTransilation(),
+        new YoudaoTransilation(),
+    ];
 
     next(channel?: string): Translator {
         for (let index = 0; index < this.translators.length; index++) {
